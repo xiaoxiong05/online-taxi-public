@@ -27,4 +27,13 @@ public class verificationCodeController {
         return verificationCodeService.generatirCode(passengerPhone);
     }
 
+    @RequestMapping("/verification-code-check")
+    public ResponseResult checkVerificationCode(@RequestBody VerificationCodeDTO verificationCodeDTO) {
+
+        String passengerPhone = verificationCodeDTO.getPassengerPhone();
+        String verificationCode = verificationCodeDTO.getVerificationCode();
+
+        ResponseResult checkCode = verificationCodeService.checkCode(passengerPhone, verificationCode);
+        return checkCode;
+    }
 }

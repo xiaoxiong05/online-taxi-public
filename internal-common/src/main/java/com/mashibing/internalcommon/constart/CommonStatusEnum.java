@@ -2,6 +2,7 @@ package com.mashibing.internalcommon.constart;
 
 
 public enum CommonStatusEnum {
+    VERIFICATION_CODE_ERROR(1099, "验证码错误"),
     SUCCESS(1, "success"),
     FAIL(0, "fail");
 
