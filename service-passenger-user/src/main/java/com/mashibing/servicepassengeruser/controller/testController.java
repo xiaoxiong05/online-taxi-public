@@ -1,2 +1,13 @@
-package com.mashibing.servicepassengeruser.controller;public class testController {
+package com.mashibing.servicepassengeruser.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class testController {
+
+    @GetMapping("/service-passenger-user")
+    public String test() {
+        return "success";
+    }
 }

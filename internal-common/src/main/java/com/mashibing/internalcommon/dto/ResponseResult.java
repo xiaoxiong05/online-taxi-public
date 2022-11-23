@@ -28,4 +28,7 @@ public class ResponseResult<T> {
         return new ResponseResult().setCode(code).setMessage(message).setData(data);
     }
 
+    public static <T> ResponseResult fail(String message) {
+        return new ResponseResult().setMessage(message);
+    }
 }

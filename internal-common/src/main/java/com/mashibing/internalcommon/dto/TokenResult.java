@@ -1,4 +1,4 @@
-package com.mashibing.internalcommon.responese;
+package com.mashibing.internalcommon.dto;
 
 import lombok.Data;
 

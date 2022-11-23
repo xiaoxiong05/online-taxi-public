@@ -5,7 +5,7 @@ import lombok.Data;
 import java.time.LocalDateTime;
 
 @Data
-public class PassengerNameDto {
+public class PassengerUser {
 
     private Long id;
     private LocalDateTime gmtCreate;
