@@ -5,7 +5,7 @@ public enum CommonStatusEnum {
     VERIFICATION_CODE_ERROR(1099, "验证码错误"),
     SUCCESS(1, "success"),
     FAIL(0, "fail"),
-
+    USER_NOT_EXISTS(1299,"用户不存在"),
     TOKEN_ERROR(2199, "token error");
 
     private int code;
